@@ -215,6 +215,35 @@ cb=googleTranslateElementInit"
 
             <ul class="cd-hero-slider">
 
+
+
+              <script>
+// Code By Webdevtrick ( https://webdevtrick.com )
+(function() {
+	var elements = document.querySelectorAll('img[data-src]');
+	var index = 0;
+	var lazyLoad = function() {	
+		if(index >= elements.length) return;
+		var item = elements[index];	
+		if((this.scrollY + this.innerHeight) > item.offsetTop) {			
+			var src = item.getAttribute("data-src");
+			item.src = src;
+			item.addEventListener('load', function() {
+				item.removeAttribute('data-src');    	 
+			});     	
+			index++;
+			lazyLoad();
+		}
+	};
+	var init = function() {
+		window.addEventListener('scroll', lazyLoad);
+		lazyLoad();
+	};
+	return init();
+})();
+              
+              </script>
+
                 <!-- Page 1 Gallery One -->
                 <li class="selected" style="background-color: white;">                    
                     <div class="cd-full-width" style="top: 0px;">
@@ -224,7 +253,8 @@ cb=googleTranslateElementInit"
                                 <!-- Gallery One pop up connected with JS code below -->
                                     <div class="grid-item">
                                         <figure class="effect-sadie">
-                                            <img src="assets\img\gallery\img\bjp_7.jpg" alt="Image" class="img-fluid tm-img">
+                                            <img src="assets\img\gallery\img\bjp_7.jpg"
+                                             data-src="assets\img\gallery\img\bjp_7.jpg" alt="Image" class="img-fluid tm-img">
                                             <figcaption>
                                                <a href="assets\img\gallery\img\bjp_1_new.jpg">View more</a>
                                             </figcaption>           

@@ -5,8 +5,8 @@
 :root {
   --thm-font: "Roboto Slab", serif; /* Headings */
   --thm-b-font: "Roboto", sans-serif; /* Body font */
-  --thm-base: #2c59d0; /* Primary color */
-  --thm-base-hover: #0332ad; /* Primary hover */
+  --thm-base: orange; /* Primary color */
+  --thm-base-hover: orange/* Primary hover */
   --thm-base-rgb: 44, 89, 208; /* Primary rgb */
   --thm-base-hue: #e7edff; /* Primary low hue */
   --thm-secondary: #333; /* Secondary */
@@ -1016,8 +1016,8 @@ textarea,
 
 
  #google_translate_element select {
-   background: blue;
-   color: blue;
+   background: orange;
+   color: orange;
    border: none;
    border-radius: 0px;
  }
@@ -1031,7 +1031,7 @@ textarea,
       top: 10px;
       align-items: center;
      padding-left: 10px;
-      background-color: blue;
+      background-color: orange;
     }
 
 select {
@@ -1064,7 +1064,7 @@ select {
 
  .goog-te-gadget .goog-te-combo {
    margin: 4px 0;
-   border: blue;
+   border: orange;
    border-radius: 0px;
    /* border-block-color: unset; */
    border-style: solid;
@@ -11868,8 +11868,8 @@ background-color: var(--thm-border);
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--thm-base);
-  color: #fff;
+  background-color: orange;
+  color: black;
 }
 
 .sigma_banner-slider .slick-prev:hover,
@@ -11878,7 +11878,7 @@ background-color: var(--thm-border);
 .sigma_banner-slider-2 .slick-next:hover,
 .sigma_banner-slider-4 .slick-prev:hover,
 .sigma_banner-slider-4 .slick-next:hover {
-  background-color: var(--thm-base-hover);
+  background-color: orange;
 }
 
 .sigma_banner-slider .slick-next,
@@ -11916,7 +11916,7 @@ background-color: var(--thm-border);
 
 .sigma_banner-slider .slick-dots .slick-active button,
 .sigma_banner-slider-2 .slick-dots .slick-active button {
-  background-color: var(--thm-base);
+  background-color: orange;
 }
 
 .sigma_banner .sigma_banner-tags{
@@ -11952,7 +11952,7 @@ background-color: var(--thm-border);
 }
 
 .sigma_banner .sigma_banner-tags li a:hover{
-  color: var(--thm-base-hover);
+  color: orange;
 }
 
 /* style 2 */
