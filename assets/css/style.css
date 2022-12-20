@@ -12405,7 +12405,6 @@ background-color: var(--thm-border);
 
 .sigma_footer.style-5 .sigma_footer-bottom .sigma_footer-links li + li:before,
 .sigma_footer.style-6 .sigma_footer-bottom .sigma_footer-links li + li:before{
-  content: "";
   position: absolute;
   left: 0;
   top: 50%;
