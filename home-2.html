@@ -93,11 +93,13 @@
             <ul class="sigma_header-top-nav sigma_header-top-cta">
               <li>
                 <!-- <a href="about-us.html"> -->
+
+
                    <div id="google_element"></div>
                 <script type="text/javascript">
                   function googleTranslateElementInit() {
                     new google.translate.TranslateElement(
-                      { pageLanguage: "en", includedLanguages: "hi,en" },
+                      {includedLanguages: "en,hi" },
                       "google_element"
                     );
                   }
@@ -106,8 +108,25 @@
                   type="text/javascript"
                   src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit"
-                ></script>
-                <!-- </a> -->
+                >
+              </script>
+
+              <script>
+                type="text/javascript" 
+                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  $(document).ready(function(){
+    $('#google_element').bind('DOMNodeInserted', function(event) {
+      $('.goog-te-menu-value span:first').html('Select Language');
+      $('.goog-te-menu-frame.skiptranslate').load(function(){
+        setTimeout(function(){
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('Select Language');    
+        }, 100);
+      });
+    });
+  });
+              </script>
+
+<!-- </a> -->
               </li>
             </ul>
           </div>
