@@ -15,17 +15,12 @@ html.gray #loader-wrapper {
 }
 
 body {
-	background-color: #DDDDDD;
+	background-color: white;
 	color: black;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 17px;
-	font-weight: 300;
-	overflow-x: hidden;
 }
 
 ul { padding: 0; margin: 0; }
 figure { margin: 0; }
-p:last-child { margin-bottom: 0; }
 
 a, button { transition: all 0.3s ease; }
 a:hover,
@@ -360,7 +355,6 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 .cd-slider-nav a, 
 .navbar-nav .nav-link { height: 50px; }
 
-.cd-hero-slider .cd-full-width { padding-top: 50px; }
 
 .tm-brand-icon { 
 	font-size: 3rem;
@@ -645,13 +639,12 @@ figure.effect-sadie:hover p {
 		height: 80px;
 	}
 
-	.cd-hero-slider .cd-full-width { padding-top: 80px; }
 
 	.tm-social-icons-container { margin-bottom: 20px; }
 
 	.cd-full-width .container-fluid {
 		position:absolute;
-		top: 10px;
+		top: 0px;
 		bottom: 10px;
 	}
 
