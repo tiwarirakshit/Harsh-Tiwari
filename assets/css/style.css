@@ -15952,3 +15952,7 @@ background-color: var(--thm-border);
   }
 
 }
+
+.sigma_logo-wrapper .sigma_logo img{
+  height: 10vh;
+}
